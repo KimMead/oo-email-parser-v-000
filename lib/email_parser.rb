@@ -7,13 +7,13 @@ class Email
   @@EmailParser = []
 
   def self.all
-    @@EmailParser 
-  end 
+    @@EmailParser
+  end
 
-  def initialize(list_of_emails) 
-    @list_of_emails = list_of_emails 
+  def initialize(list_of_emails)
+    @list_of_emails = list_of_emails
     @@EmailParser << self
-  end 
+  end
 
 def parse(email)
 
