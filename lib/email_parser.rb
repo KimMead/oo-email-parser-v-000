@@ -20,3 +20,4 @@ def parse
     address.split(',')
   end.flatten.uniq
 end
+end
