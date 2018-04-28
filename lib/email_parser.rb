@@ -3,20 +3,20 @@
 # unique email addresses. The delimiters to support are commas (',')
 # or whitespace (' ').
 class Email
-  attr_accessor :list_of_emails
-  @@EmailParser = []
+  attr_accessor :name, :csv_of_emails
+  @@all = []
 
   def self.all
-    @@EmailParser
+    @@all
   end
 
-  def initialize(list_of_emails)
-    @list_of_emails = list_of_emails
-    @@EmailParser << self
+  def initialize(csv_emails)
+    @csv_emails = csv_emails
+    @@all << self
   end
 
 def parse(email)
   email = email.new
-  @@EmailParser << email
+  @@all << email
 end
 end
