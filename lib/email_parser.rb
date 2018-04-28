@@ -16,6 +16,7 @@ class Email
   end
 
 def parse(email)
-
+  email = email.new
+  @@EmailParser << email
 end
 end
