@@ -19,6 +19,4 @@ def self.create
   email.save
   email
 end
-
-
-    
+end 
