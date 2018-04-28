@@ -7,5 +7,6 @@ class Email
   EmailParser = []
 
 def parse(email)
-  
+
+end
 end
